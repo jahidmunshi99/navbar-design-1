@@ -2,15 +2,20 @@
     .search-field {
         opacity: 0;
         pointer-events: none;
+        border:none;
         top: 110px;
         background: none;
         transition: 0.3s ease;
         margin: 0 auto;
     }
+    .search-field .search{;  
+        padding: 11px 15px;
+    }
     .search-field.active{
         opacity: 1;
         pointer-events: all;
         top: 150px;
+        z-index: 1001;
     }
     .responsive-search-field{
         display: block;
