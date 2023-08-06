@@ -49,6 +49,15 @@ a{text-decoration: none;}
     padding: 0 3%;
     margin: 0 auto;
 }
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-1-of-4{
+    width: 33.33%;
+    margin: 0 auto;
+}
 .theme-btn{
     padding: 10px 20px;
     border: 1px solid var(--light-white-color);
@@ -138,6 +147,9 @@ a{text-decoration: none;}
 .navbar{
     background: var(--theme-color);
     padding: 15px;
+}
+.navbar.scrolled{
+    background: #000;;
 }
 .navbar .nav-menu ul{
     display: flex;
@@ -267,4 +279,72 @@ a{text-decoration: none;}
     background: var(--theme-color);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
     transition: 0.3s ease;
+}
+
+/*=========================== Service Section ===========================*/
+.service-section{
+    /* text-align: center; */
+    padding: 10px 0;
+}
+/* Section Header */
+.section-header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.section-header .section-logo{
+    font-size: 50px;
+    color: var(--icon-color);
+    padding-right: 15px;
+    border-right: 2px solid var(--icon-color);
+}
+.section-header .section-header-content{
+    margin-left: 15px;
+}
+.section-header .section-header-content .section-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+.section-header .section-header-content .section-subtitle{
+    color: var(--icon-color);
+}
+/* Section Content */
+.service-section .section-content{
+    padding: 50px 0;
+}
+.service-section .section-content .items{
+    text-align: center;
+    padding: 20px 13px;
+}
+.section-content .items .item-logo{
+    /* background: var(--theme-color); */
+    text-align: center;
+    position: relative;
+}
+.section-content .items .item-logo::before{
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: var(--theme-color);
+    position: absolute;
+    transform: rotate(138deg);
+    left: 93px;
+    top: 20px;
+    z-index: -1;
+}
+.section-content .items .item-logo i{
+    font-size: 50px;
+    color: var(--light-white-color);
+    line-height: 120px;
+}
+.service-section .section-content .items .item-title{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 25px 0 10px 0;
+}
+.service-section .section-content .items .item-subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--icon-color);
 }
