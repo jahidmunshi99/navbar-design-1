@@ -7,6 +7,8 @@
     <title>Navbar Design 1</title>
     <!--========================== Line Icons ==========================-->
     <link rel="stylesheet" href="assets/font/lineicons.css">
+    <!--========================== UI KIt CSS ==========================-->
+    <!-- <link rel="stylesheet" href="resource/css/uikit.min.css"> -->
     <!--========================== CSS Custom ==========================-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--========================== CSS Rsponsive ==========================-->
@@ -14,8 +16,6 @@
 </head>
 <body>
     <!--========================== Header Section ==========================-->
-
-
     <header class="header-section">
         <div class="container">
             <div class="header-group">
@@ -37,11 +37,9 @@
                 </div>
             </div>
         </div>
-
-
     </header>
-    <!-- ========================== Navigation Section ==========================-->
 
+    <!-- ========================== Navigation Section ==========================-->
 
     <section class="navbar">
         <div class="container">
@@ -71,8 +69,6 @@
             </nav>
         </div>
     </section>
-
-
     <!--========================== Hero Section ==========================-->
     <section class="hero-section">
         <div class="container">
@@ -85,6 +81,7 @@
     </section>
 
     <!--========================== Service Section ==========================-->
+
     <section class="service-section">
         <div class="container">
             <!-- Section Header Start -->
@@ -117,10 +114,10 @@
                     <div class="col-1-of-4">
                         <div class="items">
                             <div class="item-logo">
-                                <i class="lni lni-rocket"></i>
+                                <i class="lni lni-android-original"></i>
                             </div>
                             <div class="item-title">
-                                <h4>Web Design</h4>
+                                <h4>App Development</h4>
                             </div>                        
                             <div class="item-subtitle">
                                 <p>High life narwhal, banh mi PBR single origin coffee Odd Future actually aliqua polaroid beofor</p>
@@ -130,10 +127,10 @@
                     <div class="col-1-of-4">
                         <div class="items">
                             <div class="item-logo">
-                                <i class="lni lni-rocket"></i>
+                                <i class="lni lni-cart-full"></i>
                             </div>
                             <div class="item-title">
-                                <h4>Web Design</h4>                               
+                                <h4>Ecommarce Website</h4>                               
                             </div>                        
                             <div class="item-subtitle">
                                 <p>High life narwhal, banh mi PBR single origin coffee Odd Future actually aliqua polaroid beofor</p>
@@ -143,10 +140,10 @@
                     <div class="col-1-of-4">
                         <div class="items">
                             <div class="item-logo">
-                                <i class="lni lni-rocket icon"></i>
+                                <i class="lni lni-bulb"></i>
                             </div>
                             <div class="item-title">
-                                <h4>Web Design</h4>                                
+                                <h4>Design For Startups</h4>                                
                             </div>                        
                             <div class="item-subtitle">
                                 <p>High life narwhal, banh mi PBR single origin coffee Odd Future actually aliqua polaroid beofor</p>
@@ -156,13 +153,98 @@
                 </div>
             </div>
             <!-- Section Content End -->
-
-
         </div>
     </section>
-    <!--========================== CSS Rsponsive ==========================-->
+
+    <!--========================== Portfolio Section ==========================-->
+    <section class="portfolio-section" uk-filter="target: .js-filter; animation: fade" >
+        <div class="portfolio-top">
+            <div class="container">
+                <div class="row">
+                    <!-- portfolio Left Start -->
+                    <div class="col-1-of-2">
+                        <div class="section-header">
+                            <div class="section-logo">
+                                <i class="lni lni-briefcase"></i>
+                            </div>
+                            <div class="section-header-content">
+                                <h2 class="section-title">Our Awesome Work</h2>
+                                <p class="section-subtitle">We Making Difference To Great Things Possible</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio Left End -->
+                    <!-- portfolio Right Col Start -->
+                    <div class="col-1-of-2">
+                        <div class="portfolio-items">
+                            <ul class="uk-subnav uk-subnav-pill">
+                                <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                                <li uk-filter-control="[data-color='development']"><a href="#">Development</a></li>
+                                <li uk-filter-control="[data-color='joomla']"><a href="#">Joomla</a></li>
+                                <li uk-filter-control="[data-color='wp']"><a href="#">WordPress</a></li>
+                                <li uk-filter-control="[data-color='green']"><a href="#">Web Design</a></li>
+                            </ul>                        
+                        </div>
+                    </div>
+                    <!-- portfolio Right Col End -->
+                </div>
+            </div> 
+        </div>
+        <div class="portfolio-bottom">
+            <div class="image-filter-section">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="image">
+                            <img src="/assets/image/blog1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="image">
+                            <img src="/assets/image/blog2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="image">
+                            <img src="/assets/image/blog3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="image">
+                            <img src="/assets/image/blog4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="image">
+                            <img src="/assets/image/blog4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="image">
+                            <img src="/assets/image/blog3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="image">
+                            <img src="/assets/image/blog2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="image">
+                            <img src="/assets/image/blog1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>              
+            </div>                    
+        </div>
+    </section> 
     <!--========================== CSS Rsponsive ==========================-->
     <!--========================== Java Script ==========================-->
+    <!-- ---------------- UI KIT JS ---------------- -->
+    <!-- <script src="resource/js/uikit-icons.min.js"></script>
+    <script src="resource/js/uikit.min.js"></script> -->
+    <!-- ---------------- JS Custom ---------------- -->
     <script src="assets/js/main.js"></script>    
 </body>
 </html>

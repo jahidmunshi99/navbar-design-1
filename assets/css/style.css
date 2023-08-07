@@ -28,6 +28,7 @@
     --search-icon-color:#fff;
     --nav-menu-color:#fff;
     --light-white-color:#ffff;
+    --section-bg-color:#F5F5F5;
     /* Typography */
     --theme-font:theme font;
     --normal-font-size:16px;
@@ -51,11 +52,17 @@ a{text-decoration: none;}
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+.col-1-of-2{
+    width: 49.99%;
+    margin: 0 auto;
+}
 .col-1-of-4{
-    width: 33.33%;
+    width: 24.9%;
     margin: 0 auto;
 }
 .theme-btn{
@@ -284,13 +291,14 @@ a{text-decoration: none;}
 /*=========================== Service Section ===========================*/
 .service-section{
     /* text-align: center; */
-    padding: 10px 0;
+    padding: 100px 0;
 }
 /* Section Header */
 .section-header{
     display: flex;
-    justify-content: left;
+    justify-content:left;
     align-items: center;
+    
 }
 .section-header .section-logo{
     font-size: 50px;
@@ -304,47 +312,129 @@ a{text-decoration: none;}
 .section-header .section-header-content .section-title{
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 30px; 
 }
+
 .section-header .section-header-content .section-subtitle{
     color: var(--icon-color);
 }
 /* Section Content */
 .service-section .section-content{
-    padding: 50px 0;
+    margin-top: 40px;
 }
 .service-section .section-content .items{
     text-align: center;
-    padding: 20px 13px;
+    padding: 60px 20px;
 }
 .section-content .items .item-logo{
     /* background: var(--theme-color); */
     text-align: center;
     position: relative;
 }
-.section-content .items .item-logo::before{
-    content: '';
-    width: 80px;
-    height: 80px;
-    background: var(--theme-color);
-    position: absolute;
-    transform: rotate(138deg);
-    left: 93px;
-    top: 20px;
-    z-index: -1;
+.section-content .items .item-logo::before {
+	content: '';
+	width: 81px;
+	height: 81px;
+	background: var(--theme-color);
+	position: absolute;
+	transform: rotate(134deg);
+	left: 88px;
+	top: -11px;
+	z-index: -1;
 }
 .section-content .items .item-logo i{
-    font-size: 50px;
+    font-size: 30px;
     color: var(--light-white-color);
-    line-height: 120px;
+    background: var(--theme-color);
+    padding: 13px;
+    border-top: 1px solid var(--light-white-color);
+    border-bottom: 1px solid var(--light-white-color);
 }
 .service-section .section-content .items .item-title{
     font-size: 15px;
     text-transform: uppercase;
-    margin: 25px 0 10px 0;
+    margin: 75px 0 10px 0;
 }
 .service-section .section-content .items .item-subtitle{
     font-size: 14px;
     line-height: 20px;
     color: var(--icon-color);
+}
+/*=========================== Portfolio Section ===========================*/
+
+.portfolio-top{
+    padding: 46px 0;
+    background: var(--section-bg-color);
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px 0px; */
+}
+.portfolio-items{
+    position: relative;
+    align-items: center;
+}
+.portfolio-items ul{
+    position: absolute;
+    top: -10px;
+    right: 0;;
+}
+.portfolio-items ul li{
+    display: inline-block;
+
+}
+.portfolio-items ul li a {
+    padding: 7px 14px;
+    margin-right: 5px;
+    border:1px solid var(--icon-color);
+    font-family: sans-serif;
+    color: var(--icon-color);
+    border-radius: 2px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.portfolio-items ul li a:hover{
+    background: var(--theme-color);
+    color: var(--light-white-color);
+    /* transition: 0.50s; */
+}
+.portfolio-items .active{
+    background: var(--theme-color);
+    color: var(--light-white-color);
+    border: none;
+    z-index: 1001;
+}
+
+.portfolio-items .active::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--theme-color);
+    position: absolute;
+    bottom: -8px;
+    left: 19px;
+    transform: rotate(135deg);
+    z-index: 1000;
+}
+
+/* portfolio-bottom */
+.portfolio-bottom{
+    margin-top: 10px;
+    margin: auto;
+}
+.image-filter-section .image{
+    line-height: 12px;
+
+}
+/* .image-filter-section .image::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--text-color);
+    position: absolute;
+    opacity: 0.3;
+} */
+
+
+
+.image-filter-section .image img{
+    width: 100%;
+    height: 100%;
 }
